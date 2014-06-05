@@ -2,7 +2,7 @@
 <header class="navbar-masthead banner navbar navbar-inverse navbar-static-top" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <a href="<?php echo home_url(); ?>" style="display:block; background-red;">
+      <a href="<?php echo home_url(); ?>" style="display:block; background:red;">
         <!--<span class="text-hide"><?php bloginfo('name'); ?></span>-->
         <img class="img-responsive" src="/assets/img/SIR-masthead.gif" style="margin-auto;">
       </a>
