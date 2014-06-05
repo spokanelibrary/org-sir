@@ -1,5 +1,5 @@
 
-<header class="navbar-masthead banner navbar navbar-inverse navbar-static-top visible-md visible-lg" role="banner">
+<header class="navbar-masthead banner navbar navbar-inverse navbar-static-top" role="banner">
   <div class="container">
     <div class="navbar-header">
       <a href="<?php echo home_url(); ?>">
