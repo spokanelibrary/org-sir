@@ -4,7 +4,7 @@
 
   <!-- <a name="spl-more">&nbsp;</a> -->
 
-  <footer class="content-info container" role="contentinfo">
+  <footer class="content-info container navbar-masthead" role="contentinfo">
 
     <div class="row">
       <div class="col-md-12">
