@@ -3,8 +3,7 @@
   <div class="container">
     <div class="navbar-header" style="width: 100%;">
       <a href="<?php echo home_url(); ?>" style="display:block;">
-        <!--<span class="text-hide"><?php bloginfo('name'); ?></span>-->
-        <img class="img-responsive" src="/assets/img/SIR-masthead.gif" style="margin:auto;">
+        <img class="img-responsive" src="/assets/img/SIR-masthead.png" style="margin:auto;">
       </a>
     </div>
     
