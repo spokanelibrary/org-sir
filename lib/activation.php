@@ -144,7 +144,7 @@ function roots_theme_activation_action() {
   if ($roots_theme_activation_options['create_front_page'] === 'true') {
     $roots_theme_activation_options['create_front_page'] = false;
 
-    $default_pages = array('Welcome');
+    $default_pages = array('Home');
     $existing_pages = get_pages();
     $temp = array();
 
