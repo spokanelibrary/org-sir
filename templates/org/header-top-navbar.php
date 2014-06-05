@@ -21,7 +21,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand hidden-md hidden-lg" href="<?php echo home_url(); ?>/">
-        <span class="logotype hidden-md"><?php bloginfo('name'); ?></span>
+        <span class="hidden-md">Menu &rarr;</span>
       </a>
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
