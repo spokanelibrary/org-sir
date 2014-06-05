@@ -177,8 +177,13 @@ body {
 
 
 .navbar-inverse {
-  .nav-justified a:hover {
-    background: darken(@navbar-inverse-bg, 5%);
+  .nav-justified{
+    a {
+      color: @brand-primary;
+    }
+    a:hover {
+      background: darken(@navbar-inverse-bg, 5%);
+    }
   }
 }
 
