@@ -39,7 +39,7 @@ Template Name: Archive (Posts)
 				echo wpautop($recent["post_excerpt"]);
 
 				echo '<p>';
-				echo '<a href="' . $link . '" title="Continue reading"><b>Continue reading and find links to your library</b> &rarr;</a>';
+				echo '<a href="' . $link . '" title="Continue reading"><b>Continue reading and find links to your library</b></a> &rarr;';
 				echo '</p>'.PHP_EOL;
 
 				echo '<hr>'.PHP_EOL;
