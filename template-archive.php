@@ -16,7 +16,7 @@ Template Name: Archive (Posts)
 			$args = array( 'numberposts' => '20' );
 			$recent_posts = wp_get_recent_posts( $args );
 			foreach( $recent_posts as $recent ){
-				echo '<div class="page-header"><h1>'.$recent["post_title"].'</h1></div>';
+				echo '<div class="page-header"><h1><a href="'.get_permalink($recent['ID']).'" class="">'.$recent["post_title"].'</a></h1></div>';
 				// todo: this should be an excerpt
 				//echo $recent["post_excerpt"];
 				//echo '<pre>';
