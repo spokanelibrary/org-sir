@@ -20,6 +20,7 @@ Template Name: Archive (Posts)
 				// todo: this should be an excerpt
 				//echo $recent["post_excerpt"];
 				echo wpautop($recent["post_excerpt"]);
+				print_r($recent);
 				echo '<p>';
 				echo '<a href="' . get_permalink($recent['ID']) . '" title="Continue reading" >Continue reading &rarr;</a>';
 				echo '</p>';
