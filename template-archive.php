@@ -16,7 +16,8 @@ Template Name: Archive (Posts)
 			$args = array( 'numberposts' => '20' );
 			$recent_posts = wp_get_recent_posts( $args );
 			foreach( $recent_posts as $recent ){
-				echo '<div class="page-header"><h1><a href="'.get_permalink($recent['ID']).'" class="">'.$recent["post_title"].'</a></h1></div>';
+				$link = get_permalink($recent['ID']);
+				echo '<div class="page-header"><h1><a href="'.$link.'" class="">'.$recent["post_title"].'</a></h1></div>';
 				// todo: this should be an excerpt
 				//echo $recent["post_excerpt"];
 				//echo '<pre>';
@@ -27,7 +28,7 @@ Template Name: Archive (Posts)
 	      $featured = wp_get_attachment_image_src( get_post_thumbnail_id($recent['ID']), 'thumbnail' );
 	      $image_url = $featured[0];
 	      if ( !empty($image_url) ) {
-	        $img = '<a href="'.get_permalink($recent['ID']).'" class="">
+	        $img = '<a href="'.$link.'" class="">
 	                  <img src="'.$image_url.'" class="img-responsive img-rounded alignleft" alt="'.$recent['post_name'].'">
 	                </a>'.PHP_EOL;
 	        //$img = $image_url;
@@ -38,7 +39,7 @@ Template Name: Archive (Posts)
 				echo wpautop($recent["post_excerpt"]);
 
 				echo '<p>';
-				echo '<a href="' . get_permalink($recent['ID']) . '" title="Continue reading" >Continue reading &rarr;</a>';
+				echo '<a href="' . $link . '" title="Continue reading" >Continue reading &rarr;</a>';
 				echo '</p>';
 			}
 		?>
