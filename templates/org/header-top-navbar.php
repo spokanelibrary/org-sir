@@ -10,7 +10,7 @@
   </div>
 </header><!-- /.navbar -->
 
-<header class="navbar-primary banner navbar navbar-inverse navbar-static-top" role="banner" style="background-image:url('/assets/img/wrap-corner.png'); background-repeat:no-repeat;">
+<header class="navbar-primary banner navbar navbar-inverse navbar-static-top" role="banner">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
