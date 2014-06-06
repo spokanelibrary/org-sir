@@ -40,7 +40,9 @@ Template Name: Archive (Posts)
 
 				echo '<p>';
 				echo '<a href="' . $link . '" title="Continue reading" >Continue reading &rarr;</a>';
-				echo '</p>';
+				echo '</p>'.PHP_EOL;
+
+				echo '<hr>'.PHP_EOL;
 			}
 		?>
 
