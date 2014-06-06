@@ -13,7 +13,7 @@
     }
   ?>
 
-  <div class="wrap container" role="document" style="background-image:url(/assets/img/wrap-corner.png); background-repeat:no-repeat;">
+  <div class="wrap container" role="document">
     <div class="content row">
       <div class="main <?php echo roots_main_class(); ?>" role="main">
         <?php include roots_template_path(); ?>
