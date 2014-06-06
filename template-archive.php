@@ -9,7 +9,7 @@ Template Name: Archive (Posts)
 <div class="row">
 
 	<div class="col-md-12">
-		<?php //get_template_part('templates/page', 'header'); ?>
+		<?php get_template_part('templates/page', 'header'); ?>
 		<?php get_template_part('templates/content', 'page'); ?>
 
 		<?php
@@ -17,7 +17,7 @@ Template Name: Archive (Posts)
 			$recent_posts = wp_get_recent_posts( $args );
 			foreach( $recent_posts as $recent ){
 				$link = get_permalink($recent['ID']);
-				echo '<div class="page-header"><h1><a href="'.$link.'" class="">'.$recent["post_title"].'</a></h1></div>';
+				echo '<div class=""><h2><a href="'.$link.'" class="">'.$recent["post_title"].'</a></h2></div>';
 				// todo: this should be an excerpt
 				//echo $recent["post_excerpt"];
 				//echo '<pre>';
