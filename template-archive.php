@@ -19,7 +19,10 @@ Template Name: Archive (Posts)
 				echo '<div class="page-header"><h1>'.$recent["post_title"].'</h1></div>';
 				// todo: this should be an excerpt
 				//echo $recent["post_excerpt"];
-				
+				echo '<pre>';
+				print_r($recent);
+				echo '</pre>';
+
 				$img = null;
 	      $featured = wp_get_attachment_image_src( get_post_thumbnail_id($recent['ID']), 'thumbnail' );
 	      $image_url = $featured[0];
