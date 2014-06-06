@@ -19,9 +19,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <!--
       <a class="navbar-brand hidden-md hidden-lg" href="<?php echo home_url(); ?>/">
         <span class="logotype hidden-md"><b>Menu</b> &rarr;</span>
       </a>
+      -->
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <?php
