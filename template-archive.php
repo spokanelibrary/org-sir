@@ -28,7 +28,7 @@ Template Name: Archive (Posts)
 	      $image_url = $featured[0];
 	      if ( !empty($image_url) ) {
 	        $img = '<a href="'.get_permalink($recent['ID']).'" class="">
-	                  <img src="'.$image_url.'" class="img-responsive img-rounded pull-left" alt="'.$recent['post_name'].'">
+	                  <img src="'.$image_url.'" class="img-responsive img-rounded alignleft" alt="'.$recent['post_name'].'">
 	                </a>'.PHP_EOL;
 	        //$img = $image_url;
 	      }	
