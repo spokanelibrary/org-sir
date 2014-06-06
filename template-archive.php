@@ -27,7 +27,7 @@ Template Name: Archive (Posts)
 	      $featured = wp_get_attachment_image_src( get_post_thumbnail_id($recent['ID']), 'thumbnail' );
 	      $image_url = $featured[0];
 	      if ( !empty($image_url) ) {
-	        $img = '<a href="'.get_permalink($recent['ID'].'" class="">
+	        $img = '<a href="'.get_permalink($recent['ID']).'" class="">
 	                  <img src="'.$image_url.'" class="img-responsive img-rounded pull-left" alt="'.$recent['post_name'].'">
 	                </a>'.PHP_EOL;
 	        //$img = $image_url;
