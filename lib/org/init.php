@@ -71,6 +71,8 @@ function sir_find_library_title($params) {
 
   </div>
   </div>
+  <br>
+  <br>
   ';
 
   // reset the query  
