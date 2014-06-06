@@ -49,6 +49,20 @@ function more_tag_to_clearfix ( $html ) {
 add_filter( 'the_content','more_tag_to_clearfix',10 );
 
 
+function sir_find_library_title($params) {
+  global $post;
+
+  $output = print_r($params, true);
+
+  // reset the query  
+  wp_reset_postdata();  
+    
+  // return something  
+  return $output; 
+}
+
+add_shortcode('sir_find_library_title', 'sir_find_library_title');
+
 function spl_tutorial($params) {  
     global $post;  
     
