@@ -21,11 +21,11 @@ Template Name: Archive (Posts)
 				//echo $recent["post_excerpt"];
 				
 				$img = null;
-	      $featured = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail' );
+	      $featured = wp_get_attachment_image_src( get_post_thumbnail_id($recent->ID), 'thumbnail' );
 	      $image_url = $featured[0];
 	      if ( !empty($image_url) ) {
 	        $img = '<a href="'.$link['url'].'" class="">
-	                  <img src="'.$image_url.'" class="img-responsive img-rounded" alt="'.$post->post_name.'">
+	                  <img src="'.$image_url.'" class="img-responsive img-rounded" alt="'.$recent->post_name.'">
 	                </a>'.PHP_EOL;
 	        //$img = $image_url;
 	      }	
