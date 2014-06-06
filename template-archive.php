@@ -5,14 +5,6 @@ Template Name: Archive (Posts)
 ?>
 
 
-<?php while ( have_posts() ) : the_post(); ?>
-<h1 class="entry-title"><?php the_title(); ?></h1>
-<div class="entry-content">
-<?php the_content(); ?>
-</div><!-- .entry-content -->
-<?php endwhile; // end of the loop. ?>
-
-
 
 <div class="row">
 
@@ -27,7 +19,7 @@ Template Name: Archive (Posts)
 				echo '<div class="page-header"><h1>'.$recent["post_title"].'</h1></div>';
 				// todo: this should be an excerpt
 				//echo $recent["post_excerpt"];
-				echo $recent["post_content"];
+				echo wp_autop($recent["post_content"]);
 				echo '<p>';
 				echo '<a href="' . get_permalink($recent['ID']) . '" title="Continue reading" >Continue reading &rarr;</a>';
 				echo '</p>';
