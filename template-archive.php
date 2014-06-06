@@ -19,16 +19,16 @@ Template Name: Archive (Posts)
 				echo '<div class="page-header"><h1>'.$recent["post_title"].'</h1></div>';
 				// todo: this should be an excerpt
 				//echo $recent["post_excerpt"];
-				echo '<pre>';
-				print_r($recent);
-				echo '</pre>';
+				//echo '<pre>';
+				//print_r($recent);
+				//echo '</pre>';
 
 				$img = null;
 	      $featured = wp_get_attachment_image_src( get_post_thumbnail_id($recent['ID']), 'thumbnail' );
 	      $image_url = $featured[0];
 	      if ( !empty($image_url) ) {
-	        $img = '<a href="'.$link['url'].'" class="">
-	                  <img src="'.$image_url.'" class="img-responsive img-rounded" alt="'.$recent['post_name'].'">
+	        $img = '<a href="'.get_permalink($recent['ID'].'" class="">
+	                  <img src="'.$image_url.'" class="img-responsive img-rounded pull-left" alt="'.$recent['post_name'].'">
 	                </a>'.PHP_EOL;
 	        //$img = $image_url;
 	      }	
