@@ -52,7 +52,26 @@ add_filter( 'the_content','more_tag_to_clearfix',10 );
 function sir_find_library_title($params) {
   global $post;
 
-  $output = print_r($params, true);
+  //$output = print_r($params, true);
+
+  $output = '
+  <hr>
+  <p class="lead text-center">
+  Find <em>'.$params['title'].'</em> at your local library:
+  </p>
+  <div class="row">
+  <div class="col-sm-6">
+
+  <a href="http://www.scld.org/?search-type=catalog&amp;s='.$params['scld'].'"><img class="img-responsive center-block" style="max-height: 80px; margin:auto;" src="/assets/img/SCLD-Logo-hidpi" alt="Spokane County Library District" /></a>
+
+  </div>
+  <div class="col-sm-6">
+
+  <a href="http://search.spokanelibrary.org/bib/'.$params['spl'].'"><img class="img-responsive center-block" style="max-height: 80px; margin:auto;" src="/assets/img/SPL-Logo-hidpi" alt="Spokane Public Library" /></a>
+
+  </div>
+  </div>
+  ';
 
   // reset the query  
   wp_reset_postdata();  
