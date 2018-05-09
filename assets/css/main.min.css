@@ -2371,7 +2371,7 @@ input[type="button"].btn-block {
 .fade.in {
     opacity: 1
 }
-
+c
 .collapse {
     display: none
 }
@@ -7465,7 +7465,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: Georgia, "Times New Roman", Times, serif;
-    color: #e66428
+    color: #b91b23
 }
 
 h2,
@@ -7548,7 +7548,7 @@ h3 {
 
 .navbar-primary {
     margin-bottom: 10px;
-    border-color: #e66428
+    border-color: #b91b23 
 }
 
 @media(min-width:992px) {
